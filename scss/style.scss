@@ -1,0 +1,122 @@
+@import "grid";
+@import "wordpress";
+@import "navigation";
+
+// MISC
+
+.pad-top {
+  padding-top: 20px;
+}
+
+.pad-right {
+  padding-right: 20px;
+}
+
+.pad-bottom {
+  padding-bottom: 20px;
+}
+
+.pad-left {
+  padding-left: 20px;
+}
+
+// MAIN LAYOUT
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-wrap {
+  background: #1C1C2F;
+  min-height: 90px;
+  position: relative;
+  z-index: 5;
+}
+
+.slide-wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#cssmenu {
+  margin-top: 20px;
+}
+
+.widget-left {
+  padding: 30px 40px 30px 0;
+}
+
+.widget-right {
+  padding: 30px 0 30px 40px;
+}
+
+.widget-page-list {
+  list-style-type: none;
+  li {
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
+
+// STICKY FOOTER
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -90px;
+  padding-bottom: 90px; // add padding
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+footer, .page-wrap:after {
+  height: 90px; 
+}
+
+footer {
+  background: #020402;
+  .copyright {
+    margin-top: 35px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+// PROJECTS
+
+.product-holder {
+  width: 26%;
+  float: left;
+  padding: 10px 30px 30px 0;
+  height: 200px;
+  a,
+  a:visited,
+  a:hover {
+    color: #444;
+  }
+}
+
+.product-image {
+  border: 1px solid #636363;
+}
+
+.product-image-title {
+  padding: 10px 0 10px 0;
+}
+
+// SLIDESET: PRODUCTS
+
+.product-widget {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+.product-name {
+  text-align: center;
+}
+

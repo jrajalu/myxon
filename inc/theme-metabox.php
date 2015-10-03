@@ -66,3 +66,33 @@ add_action( 'cmb2_init', 'myxon_register_product_metabox' );
     
   }
   
+// SERVICES
+  
+add_action( 'cmb2_init', 'myxon_register_service_metabox' );
+
+  function myxon_register_service_metabox() {
+
+    $prefix = '_myxon_';
+
+    $cmb_service = new_cmb2_box( array(
+      'id'            => $prefix . 'service',
+      'title'         => __( 'Service Details', 'myxon' ),
+      'object_types'  => array( 'service' ),
+    ) );
+
+    $cmb_service->add_field( array(
+      'name' => __( 'Main Image', 'myxon' ),
+      'desc' => __( 'Upload an image or enter a URL.', 'myxon' ),
+      'id'   => $prefix . 'service_image',
+      'type' => 'file',
+    ) );
+    
+    $cmb_service->add_field( array(
+      'name' => 'Project Image',
+      'desc' => '',
+      'id'   => $prefix . 'service_image_list',
+      'type' => 'file_list',
+    ) );
+    
+  }
+  

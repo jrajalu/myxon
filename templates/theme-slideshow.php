@@ -1,6 +1,6 @@
 <?php
 /**
- * @package trientamedik
+ * @package myxon
  * @since 1.0
  */
 ?> 
@@ -18,8 +18,8 @@
       if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); 
     ?>
     <li>
-      <a href="<?php echo get_post_meta(get_the_ID(),'_trientamedik_slide_link',true); ?>">
-        <img src="<?php echo get_post_meta(get_the_ID(),'_trientamedik_slide_image',true); ?>" alt="<?php the_title(); ?>" style="width: 100%;">
+      <a href="<?php echo get_post_meta(get_the_ID(),'_myxon_slide_link',true); ?>">
+        <img src="<?php echo get_post_meta(get_the_ID(),'_myxon_slide_image',true); ?>" alt="<?php the_title(); ?>" style="width: 100%;">
       </a>
     </li>            
     <?php endwhile; else: ?>

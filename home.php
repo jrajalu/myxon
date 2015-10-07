@@ -7,6 +7,6 @@
   <?php if (dynamic_sidebar( 'sidebar-3' )) : else : endif; ?>
 </div>
 
-<?php get_template_part( 'templates/theme', 'products' ); ?>
+<?php //get_template_part( 'templates/theme', 'products' ); ?>
 
 <?php get_footer(); ?>

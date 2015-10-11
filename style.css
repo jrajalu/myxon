@@ -1,7 +1,7 @@
 /*
 Theme Name: MYXON
 Theme URI: https://github.com/jrajalu/myxon
-Version: 1.0.2
+Version: 1.0.3
 Description: myxon.com.my
 Author: Jamaludin Rajalu
 */
@@ -648,6 +648,7 @@ a img.aligncenter {
 
 .widget-page-list {
   list-style-type: none;
+  padding-left: 0;
 }
 .widget-page-list li ul {
   padding-left: 20px;
